@@ -1,0 +1,15 @@
+:root {
+    --header-background: #F5F5F5;
+
+    --body-background: #e3e5e8;
+    --font-color: #111111;
+    --border-color: #D3D3D3;
+}
+
+.dark {
+    --header-background: #1C1C1C;
+
+    --body-background: #202225;
+    --font-color: #EEEEEE;
+    --border-color: #3F3F3F;
+}

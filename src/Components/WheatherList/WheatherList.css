@@ -1,0 +1,64 @@
+.weather__list{
+    max-width: 450px;
+    margin: auto;
+    color: var(--font-color);
+}
+
+.wheather-item{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.time__date{
+    font-weight: bold;
+    font-size: .9em;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.time__hour{
+    font-family: monospace;
+    font-size: 1.2em;
+}
+
+.wheather-item__time{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wheather-item__weather{
+   display: grid;
+   grid-template-columns: 100px 1fr;
+   margin-left: 40px;
+}
+
+.weather__info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+.info__temp{
+    font-family: monospace;
+    font-size: 2em;
+    position: relative;
+}
+
+.info__temp::after{
+    content: "°C";
+    font-size: .5em;
+    position: absolute;
+    font-weight: bold;
+}
+
+.info__desc{
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    word-wrap: break-word;
+    text-align: center;
+}

@@ -1,0 +1,58 @@
+.wheater-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 ;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--font-color);
+}
+
+.wheater-card__img{
+    margin-left: 10px;
+    height: 150px;
+}
+
+.weather-card__temp{
+    font-family: monospace;
+    font-size: 5em;
+    position: relative;
+}
+
+.weather-card__temp::after{
+    content: "°C";
+    font-size: .4em;
+    position: absolute;
+    font-weight: bold;
+}
+
+.weather-card__descrip{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+.weather-card__country{
+    text-align: start;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.weather-card__time{
+    font-family: monospace;
+    letter-spacing: 1px;
+    text-align: start;
+    width: 60%;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #CD4502;
+}
+
+@media screen and (max-width:650px) {
+    .weather-card__country, .weather-card__time{
+        width: 90%;
+    }
+}

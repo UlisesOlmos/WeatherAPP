@@ -1,0 +1,47 @@
+.search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.search__my-search{
+    text-align: end;
+    position: relative;
+    flex: 1;
+}
+
+.search__input{
+    font-size: .9em;
+    outline: none;
+    padding: 7px 10px;
+    border: 1px solid #AAAAAA;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.search__input:not(:focus) + .search__cities{
+    opacity: 0;
+}
+
+.search__my-location{
+    outline: none;
+    border: none;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+    color:brown;
+}
+
+.search__cities{
+    display: flex;
+    flex-direction: column;
+    background: #EEEEEE;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    width: 100%;
+    text-align: start;
+}

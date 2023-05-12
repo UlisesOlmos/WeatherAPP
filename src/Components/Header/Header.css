@@ -1,0 +1,83 @@
+.header{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    position: fixed;
+    background: var(--header-background);
+    width: 100%;
+    z-index: 100;
+}
+
+.logo{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 2em;
+    color: var(--font-color);
+}
+
+.search__btn{
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    cursor: pointer;
+    color: var(--font-color);
+}
+
+.header .search__my-search{
+    flex: 1;
+    text-align: end;
+}
+
+.header .search__input{
+    max-width: 40%;
+}
+
+.header .search__cities{
+    max-width: 40%;
+}
+
+
+.theme__btn{
+    margin: 0 10px 0 20px;
+    border: none;
+    font-size: 1.5em;
+    color: var(--font-color);
+    background: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+.modal__background{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.7);
+    z-index: 100;
+}
+
+.modal__search{
+    background: #CCCCCC;
+    padding: 60px 20px;
+    margin: auto 0;
+    position: relative;
+}
+
+.modal__close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
