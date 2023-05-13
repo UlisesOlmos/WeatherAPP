@@ -1,6 +1,7 @@
 import './App.css';
 import './colors.css'
-import { Dashboard } from './Components';
+import { Dashboard ,PageNotFound} from './Components';
+import {Route, Routes } from 'react-router-dom';
 import { LocationProvider } from './Contexts/LocationContext';
 import { ThemeProvider } from './Contexts/ThemeContext';
 
@@ -10,7 +11,10 @@ function App() {
     <div className="App">
       <ThemeProvider>
         <LocationProvider>
-          <Dashboard />
+          <Routes>
+            <Route path='/' element={<Dashboard/>} />
+            <Route path='*' element={<PageNotFound />} />
+          </Routes>
         </LocationProvider>
       </ThemeProvider>
     </div>

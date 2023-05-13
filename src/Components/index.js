@@ -5,5 +5,6 @@ import WheaterCard from "./WheatherCard/WheatherCard.jsx";
 import SearchBar from "./SearchBar/SearchBar.jsx";
 import SearchCity from "./SearchCity/SearchCity.jsx";
 import WheatherList from "./WheatherList/WheatherList.jsx";
+import PageNotFound from "./PageNotFound/PageNotFound.jsx";
 
-export { Header, Main, Dashboard, WheaterCard, SearchBar, SearchCity, WheatherList }
+export { Header, Main, Dashboard, WheaterCard, SearchBar, SearchCity, WheatherList , PageNotFound}
